@@ -2,30 +2,32 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
-// import Image from "../components/image"
 import SEO from "../components/seo"
 
-const IndexPage = props => {
+const ThankYouPage = props => {
   const data = props.data.allFile.edges[0].node.childMarkdownRemark.frontmatter
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="Thank You Page" />
       <h1>{data.title}</h1>
       <p>{data.intro}</p>
       <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-        <img src={data.image} alt="Ryan" />
+        <img src={data.image} alt="Thank You" />
       </div>
-      <Link to="/thank-you/">Go to the Thank You Page</Link>
+      <Link to="/">Go back to the homepage</Link>
     </Layout>
   )
 }
 
-export default IndexPage
+export default ThankYouPage
 
 export const query = graphql`
   query {
     allFile(
-      filter: { sourceInstanceName: { eq: "content" }, name: { eq: "home" } }
+      filter: {
+        sourceInstanceName: { eq: "content" }
+        name: { eq: "thank-you" }
+      }
     ) {
       edges {
         node {
