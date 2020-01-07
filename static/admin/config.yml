@@ -13,7 +13,7 @@ collections:
         name: "home"
         file: "content/home.md"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "home-page"}
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "home-page"}
           - { label: Background Image, name: backgroundimage, widget: image }
           - { label: Title, name: title, widget: string }
           - { label: Sub-Title, name: subtitle, widget: string }
@@ -24,7 +24,7 @@ collections:
         name: "thank-you"
         file: "content/thank-you.md"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "thank-you-page"}
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "thank-you-page"}
           - { label: Title, name: title, widget: string }
           - { label: Intro text, name: intro, widget: text }
           - { label: Image, name: image, widget: image }
