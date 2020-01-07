@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 // import Image from "../components/image"
 import SEO from "../components/seo"
 
-export const IndexPage = props => {
+const IndexPage = props => {
   const data = props.data.allFile.edges[0].node.childMarkdownRemark.frontmatter
   return (
     <Layout>
@@ -19,6 +19,8 @@ export const IndexPage = props => {
     </Layout>
   )
 }
+
+export default IndexPage
 
 export const query = graphql`
   query {
@@ -37,4 +39,5 @@ export const query = graphql`
         }
       }
     }
-  }`
+  }
+`
