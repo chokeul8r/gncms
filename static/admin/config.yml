@@ -13,13 +13,18 @@ collections:
         name: "home"
         file: "content/home.md"
         fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "home-page"}
+          - { label: Background Image, name: backgroundimage, widget: image }
           - { label: Title, name: title, widget: string }
+          - { label: Sub-Title, name: subtitle, widget: string }
           - { label: Intro text, name: intro, widget: text }
-          - { label: Image, name: image, widget: image }
+          - { label: Body text, name: body, widget: text }
+          - { label: Profile Image, name: profileimage, widget: image }    
       - label: "Thank You Page"
         name: "thank-you"
         file: "content/thank-you.md"
         fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "thank-you-page"}
           - { label: Title, name: title, widget: string }
           - { label: Intro text, name: intro, widget: text }
           - { label: Image, name: image, widget: image }

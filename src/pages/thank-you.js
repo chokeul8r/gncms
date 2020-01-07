@@ -12,7 +12,7 @@ const ThankYouPage = props => {
       <h1>{data.title}</h1>
       <p>{data.intro}</p>
       <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-        <img src={data.image} alt="Thank You" />
+        <img src={data.profileimage} alt="Thank You" />
       </div>
       <Link to="/">Go back to the homepage</Link>
     </Layout>

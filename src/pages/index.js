@@ -13,7 +13,7 @@ const IndexPage = props => {
       <h1>{data.title}</h1>
       <p>{data.intro}</p>
       <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-        <img src={data.image} alt="Ryan" />
+        <img src={data.profileimage} alt="Ryan" />
       </div>
       <Link to="/thank-you/">Go to the Thank You Page</Link>
     </Layout>
