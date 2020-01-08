@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 
 const ThankYouPageTemplate = ({ title, headline, outtro, profileimage }) => (
   <Layout>
-    <SEO title="Thank You Page" />
+    <SEO title="Thank You" />
     <h1>{headline}</h1>
     <p>{outtro}</p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
@@ -47,7 +47,7 @@ export default ThankYouPage
 
 export const pageQuery = graphql`
   query ThankYouPageTemplate {
-    markdownRemark(frontmatter: { title: { eq: "Thank-You" } }) {
+    markdownRemark(frontmatter: { title: { eq: "Thank You" } }) {
       frontmatter {
         title
         headline
