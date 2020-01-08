@@ -15,10 +15,10 @@ collections:
         file: "content/home.md"
         fields:
           - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "index",
+              label: Template Key,
+              name: templateKey,
+              widget: hidden,
+              default: index,
             }
           - { label: Background Image, name: backgroundimage, widget: image }
           - { label: Title, name: title, widget: string }
@@ -32,10 +32,10 @@ collections:
         file: "content/thank-you.md"
         fields:
           - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "thank-you",
+              label: Template Key,
+              name: templateKey,
+              widget: hidden,
+              default: thank-you,
             }
           - { label: Title, name: title, widget: string }
           - { label: Headline, name: headline, widget: string }
