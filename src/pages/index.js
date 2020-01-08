@@ -66,15 +66,17 @@ export default IndexPage
 
 export const pageQuery = graphql`
   query IndexPageTemplate {
-    markdownRemark(frontmatter: { title: { eq: "Home" } }) {
+    markdownRemark(frontmatter: { templateKey: { eq: "home" } }) {
       frontmatter {
-        title
-        intro
         backgroundimage
-        profileimage
         bodytext
         headline
+        intro
+        outtro
+        profileimage
         subheadline
+        title
+        templateKey
       }
     }
   }

@@ -47,12 +47,13 @@ export default ThankYouPage
 
 export const pageQuery = graphql`
   query ThankYouPageTemplate {
-    markdownRemark(frontmatter: { title: { eq: "Thank You" } }) {
+    markdownRemark(frontmatter: { templateKey: { eq: "thank-you" } }) {
       frontmatter {
-        title
         headline
         outtro
         profileimage
+        title
+        templateKey
       }
     }
   }
