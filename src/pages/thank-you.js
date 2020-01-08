@@ -46,7 +46,7 @@ ThankYouPage.propTypes = {
 export default ThankYouPage
 
 export const pageQuery = graphql`
-  query IndexPageTemplate {
+  query ThankYouPageTemplate {
     markdownRemark(frontmatter: { title: { eq: "Thank-You" } }) {
       frontmatter {
         title
