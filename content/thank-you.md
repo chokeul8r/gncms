@@ -1,10 +1,11 @@
 ---
-title: Thank You!
-intro: >-
-  Portland justo elementum non at food truck justo cursus tellus vivamus
-  Portland pellentesque odio eu bibendum. Craft beer ipsum amet pharetra fusce
-  +1 enim nec adipiscing urna food truck et vulputate lorem curabitur Brooklyn
-  mattis bibendum vitae.
-image: /assets/ryan.jpg
+title: Thank You
+headline: Thank You
+Outtro: >-
+  You probably haven't heard of them odio sodales curabitur elementum arcu
+  mattis maecenas nec cred cursus vulputate molestie amet nam bibendum. Cursus
+  nec bahn mi vulputate leo rutrum sem proin odio cursus quisque hoodie nam a
+  non bibendum cursus.
+profileimage: /assets/ryan.jpg
 ---
 
