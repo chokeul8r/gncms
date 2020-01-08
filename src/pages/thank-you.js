@@ -12,7 +12,7 @@ const ThankYouPageTemplate = ({ title, headline, outtro, profileimage }) => (
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <img src={profileimage} alt="Thank You" />
     </div>
-    <Link to="/">Go back to the homepage</Link>
+    <Link to="/">Go back to the homepage...</Link>
   </Layout>
 )
 
