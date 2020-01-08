@@ -1,4 +1,5 @@
 ---
+templateKey: home
 backgroundimage: /assets/background-images-1.jpg
 title: Home
 headline: Daddy's Little Nugget

@@ -1,4 +1,5 @@
 ---
+templateKey: thank-you
 title: Thank You
 headline: Thank You
 outtro: >-
