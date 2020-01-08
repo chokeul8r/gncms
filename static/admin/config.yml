@@ -31,8 +31,13 @@ collections:
         name: "thank-you"
         file: "content/thank-you.md"
         fields:
-          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "thank-you"}
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "thank-you",
+            }
           - { label: Title, name: title, widget: string }
           - { label: Headline, name: headline, widget: string }
-          - { label: Outtro, name: Outtro, widget: text }
+          - { label: Outtro, name: outtro, widget: text }
           - { label: Profile Image, name: profileimage, widget: image }

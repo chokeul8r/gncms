@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const IndexPageTemplate = ({
+  title,
   backgroundimage,
   headline,
   subheadline,
