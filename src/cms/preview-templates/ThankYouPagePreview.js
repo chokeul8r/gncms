@@ -11,7 +11,7 @@ const ThankYouPagePreview = ({ entry, getAsset }) => {
         title={frontmatter.title}
         headline={frontmatter.headline}
         outtro={frontmatter.outtro}
-        profileimage={frontmatter.profileimage}
+        profileImage={frontmatter.profileImage}
       />
     )
   } else {
