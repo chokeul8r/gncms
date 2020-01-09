@@ -7,6 +7,6 @@ outtro: >-
   mattis maecenas nec cred cursus vulputate molestie amet nam bibendum. Cursus
   nec bahn mi vulputate leo rutrum sem proin odio cursus quisque hoodie nam a
   non bibendum cursus.
-profileimage: /assets/ryan.jpg
+profileImage: /assets/ryan.jpg
 ---
 
