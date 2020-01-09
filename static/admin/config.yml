@@ -26,7 +26,7 @@ collections:
           - { label: Sub-Headline, name: subHeadline, widget: string }
           - { label: Introduction, name: introduction, widget: string }
           - { label: Call To Action, name: callToAction, widget: string }
-          - { label: Body Text, name: body, widget: string }
+          - { label: Body Text, name: body, widget: markdown }
           - { label: Profile Image, name: profileImage, widget: image }
       - label: "Thank You Page"
         name: "thank-you"
