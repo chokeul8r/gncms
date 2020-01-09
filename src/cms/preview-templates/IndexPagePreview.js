@@ -9,12 +9,13 @@ const IndexPagePreview = ({ entry, getAsset }) => {
     return (
       <IndexPageTemplate
         title={frontmatter.title}
-        backgroundimage={frontmatter.backgroundimage}
+        featuredImage={frontmatter.featuredImage}
         headline={frontmatter.headline}
-        subheadline={frontmatter.subheadline}
-        intro={frontmatter.intro}
-        bodytext={frontmatter.bodytext}
-        profileimage={frontmatter.profileimage}
+        subHeadline={frontmatter.subHeadline}
+        introduction={frontmatter.introduction}
+        callToAction={frontmatter.callToAction}
+        body={frontmatter.body}
+        profileImage={frontmatter.profileImage}
       />
     )
   } else {

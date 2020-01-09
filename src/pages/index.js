@@ -6,25 +6,29 @@ import SEO from "../components/seo"
 
 const IndexPageTemplate = ({
   title,
-  backgroundimage,
+  featuredImage,
   headline,
-  subheadline,
-  intro,
-  profileimage,
-  bodytext,
+  subHeadline,
+  introduction,
+  callToAction,
+  profileImage,
+  body,
 }) => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Landing Page" />
     <div style={{ maxWidth: `1500px`, marginBottom: `1.45rem` }}>
-      <img src={backgroundimage} alt="background" />
+      <img src={featuredImage} alt="background" />
     </div>
     <h1>{headline}</h1>
-    <h2>{subheadline}</h2>
-    <p>{intro}</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <img src={profileimage} alt="Ryan" />
+    <h2>{subHeadline}</h2>
+    <p>{introduction}</p>
+    <div>
+        <button>{callToAction}</button>
     </div>
-    <div>{bodytext}</div>
+    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+      <img src={profileImage} alt="Ryan" />
+    </div>
+    <div>{body}</div>
     <Link to="/thank-you/">Go to the Thank You Page</Link>
   </Layout>
 )
@@ -32,11 +36,12 @@ const IndexPageTemplate = ({
 IndexPageTemplate.propTypes = {
   title: PropTypes.string,
   headline: PropTypes.string,
-  subheadine: PropTypes.string,
-  intro: PropTypes.string,
-  backgroundimage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  profileimage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  bodytext: PropTypes.string,
+  subHeadine: PropTypes.string,
+  introduction: PropTypes.string,
+  callToAction: PropTypes.string,
+  featuredImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  profileImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  body: PropTypes.string,
 }
 
 const IndexPage = ({ data }) => {
@@ -44,12 +49,13 @@ const IndexPage = ({ data }) => {
   return (
     <IndexPageTemplate
       title={frontmatter.title}
-      backgroundimage={frontmatter.backgroundimage}
+      featuredImage={frontmatter.featuredImage}
       headline={frontmatter.headline}
-      subheadline={frontmatter.subheadline}
-      intro={frontmatter.intro}
-      bodytext={frontmatter.bodytext}
-      profileimage={frontmatter.profileimage}
+      subHeadline={frontmatter.subHeadline}
+      introduction={frontmatter.introduction}
+      callToAction={frontmatter.callToAction}
+      body={frontmatter.body}
+      profileImage={frontmatter.profileImage}
     />
   )
 }
@@ -66,15 +72,15 @@ export default IndexPage
 
 export const pageQuery = graphql`
   query IndexPageTemplate {
-    markdownRemark(frontmatter: { templateKey: { eq: "home" } }) {
+    markdownRemark(frontmatter: { templateKey: { eq: "landing-page" } }) {
       frontmatter {
-        backgroundimage
-        bodytext
+        featuredImage
+        body
         headline
-        intro
-        outtro
-        profileimage
-        subheadline
+        introduction
+        callToAction
+        profileImage
+        subHeadline
         title
         templateKey
       }

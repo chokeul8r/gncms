@@ -10,23 +10,24 @@ collections:
   - label: "Pages"
     name: "pages"
     files:
-      - label: "Home Page"
-        name: "home"
-        file: "content/home.md"
+      - label: "Landing Page"
+        name: "landing-page"
+        file: "content/landing-page.md"
         fields:
           - {
               label: Template Key,
               name: templateKey,
               widget: hidden,
-              default: home,
+              default: landing-page,
             }
-          - { label: Background Image, name: backgroundimage, widget: image }
+          - { label: Featured Image, name: featuredImage, widget: image }
           - { label: Title, name: title, widget: string }
           - { label: Headline, name: headline, widget: string }
-          - { label: Sub-Headline, name: subheadline, widget: string }
-          - { label: Intro, name: intro, widget: text }
-          - { label: Body Text, name: bodytext, widget: text }
-          - { label: Profile Image, name: profileimage, widget: image }
+          - { label: Sub-Headline, name: subHeadline, widget: string }
+          - { label: Introduction, name: introduction, widget: string }
+          - { label: Call To Action, name: callToAction, widget: string }
+          - { label: Body Text, name: body, widget: string }
+          - { label: Profile Image, name: profileImage, widget: image }
       - label: "Thank You Page"
         name: "thank-you"
         file: "content/thank-you.md"
@@ -35,9 +36,9 @@ collections:
               label: Template Key,
               name: templateKey,
               widget: hidden,
-              default: thank-you,
+              default: thank-you-page,
             }
           - { label: Title, name: title, widget: string }
           - { label: Headline, name: headline, widget: string }
-          - { label: Outtro, name: outtro, widget: text }
-          - { label: Profile Image, name: profileimage, widget: image }
+          - { label: Outtro, name: outtro, widget: string }
+          - { label: Profile Image, name: profileImage, widget: image }
