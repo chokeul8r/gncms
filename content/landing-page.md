@@ -10,11 +10,6 @@ introduction: >-
   lorem eget brunch quam fusce magna ligula eu congue quisque Austin bibendum
   vulputate molestie. 
 callToAction: Submit
-body: >-
-  At elementum curabitur mauris pellentesque gravida you probably haven't heard
-  of them urna vulputate et cursus non amet DIY mauris at eros. Congue tellus
-  maecenas skateboard congue ligula ut vivamus nec adipiscing bahn mi sit leo
-  gravida quam sem ut organic. 
 profileImage: /assets/ryan.jpg
 ---
-
+Ipsum lectus elementum indie orci nulla vivamus tattoo porta curabitur eu viral orci curabitur adipiscing fixie arcu arcu elementum. Artisan nulla integer tempus VHS enim curabitur eros Portland ipsum mattis ligula mustache vitae sed quisque biodiesel.
