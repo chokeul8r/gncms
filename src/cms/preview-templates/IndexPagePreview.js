@@ -14,7 +14,6 @@ const IndexPagePreview = ({ entry, getAsset }) => {
         subHeadline={frontmatter.subHeadline}
         introduction={frontmatter.introduction}
         callToAction={frontmatter.callToAction}
-        body={frontmatter.body}
         profileImage={frontmatter.profileImage}
       />
     )

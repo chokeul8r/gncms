@@ -12,7 +12,6 @@ const IndexPageTemplate = ({
   introduction,
   callToAction,
   profileImage,
-  body,
 }) => (
   <Layout>
     <SEO title="Landing Page" />
@@ -28,7 +27,6 @@ const IndexPageTemplate = ({
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <img src={profileImage} alt="Ryan" />
     </div>
-    <div>{body}</div>
     <Link to="/thank-you/">Go to the Thank You Page</Link>
   </Layout>
 )
@@ -41,7 +39,6 @@ IndexPageTemplate.propTypes = {
   callToAction: PropTypes.string,
   featuredImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   profileImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  body: PropTypes.string,
 }
 
 const IndexPage = ({ data }) => {
@@ -54,7 +51,6 @@ const IndexPage = ({ data }) => {
       subHeadline={frontmatter.subHeadline}
       introduction={frontmatter.introduction}
       callToAction={frontmatter.callToAction}
-      body={frontmatter.body}
       profileImage={frontmatter.profileImage}
     />
   )
@@ -75,7 +71,6 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "landing-page" } }) {
       frontmatter {
         featuredImage
-        body
         headline
         introduction
         callToAction
